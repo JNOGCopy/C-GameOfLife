@@ -1,0 +1,9 @@
+The game "Game Of Life" made by Conway made in C and SDL3
+
+You need in order to run it:
+- Linux (It should possible to make a Windows port)
+- SDL3
+- Make
+- gcc
+
+Just enter the LifeGame directory, and build the project with "make", then go to build/out and execute lifegame.elf, or just type "make run"

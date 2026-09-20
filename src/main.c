@@ -232,9 +232,11 @@ void update(double deltaTime) {
   SDL_SetRenderDrawColor(appRenderer, 100, 100, 100, 255);
   Position sanitazedPos = sanitazePosition(&currentSelectedPosition);
 
-  if (automatic) {
+  while (automatic && timer > 0.15f) {
     handleSimulator();
+    timer -= 0.15f;
   }
+  drawCellGrid();
 
   SDL_FRect rect;
 
